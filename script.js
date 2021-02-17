@@ -26,5 +26,5 @@ function checker () {
     document.getElementById('result').innerHTML = 'Only Positives! Please try again'
   } else if (height <= 0) {
     document.getElementById('result').innerHTML = 'Only Positives! Please try again'
-  } 
+  }
 }
