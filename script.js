@@ -1,6 +1,7 @@
+// Line below activates the function to calculate the area when the user clicks the button
 document.getElementById('calculate').addEventListener('click', area)
-document.getElementById('calculate').addEventListener('click', checker)
 
+/* The function below collects the inputs and stores them as variables. Next it calculates the area and displays it */
 function area () {
   let sideone = document.getElementById('side-one').value
   sideone = parseInt(sideone)
@@ -11,20 +12,4 @@ function area () {
   let area = sideone + sidetwo
   area = area / 2 * height
   document.getElementById('result').innerHTML = 'Your area is ' + area
-}
-
-function checker () {
-  let sideone = document.getElementById('side-one').value
-  sideone = parseInt(sideone)
-  let sidetwo = document.getElementById('side-two').value
-  sidetwo = parseInt(sidetwo)
-  let height = document.getElementById('height').value
-  height = parseInt(height)
-  if (sideone <= 0) {
-    document.getElementById('result').innerHTML = 'Only Positives! Please try again'
-  } else if (sidetwo <= 0) {
-    document.getElementById('result').innerHTML = 'Only Positives! Please try again'
-  } else if (height <= 0) {
-    document.getElementById('result').innerHTML = 'Only Positives! Please try again'
-  }
 }
