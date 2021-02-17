@@ -10,7 +10,7 @@ function area () {
   height = parseInt(height)
   let area = sideone + sidetwo
   area = area / 2 * height
-  document.getElementById('result').innerHTML = "Your area is " + area
+  document.getElementById('result').innerHTML = 'Your area is ' + area
 }
 
 function checker () {
@@ -21,10 +21,10 @@ function checker () {
   let height = document.getElementById('height').value
   height = parseInt(height)
   if (sideone <= 0) {
-  document.getElementById('result').innerHTML = "Only Positives! Please try again"
+  document.getElementById('result').innerHTML = 'Only Positives! Please try again'
   } else if (sidetwo <= 0) {
-  document.getElementById('result').innerHTML = "Only Positives! Please try again"
+  document.getElementById('result').innerHTML = 'Only Positives! Please try again'
   } else if (height <= 0) {
-  document.getElementById('result').innerHTML = "Only Positives! Please try again"
+  document.getElementById('result').innerHTML = 'Only Positives! Please try again'
 } 
 }
